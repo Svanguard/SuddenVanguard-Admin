@@ -2,15 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ADMIN_ID</key>
+	<string>$(ADMIN_ID)</string>
+	<key>ADMIN_PWD</key>
+	<string>$(ADMIN_PWD)</string>
 	<key>HOST_VALUE</key>
 	<string>$(HOST_VALUE)</string>
 	<key>NEXON_URL</key>
 	<string>$(NEXON_URL)</string>
 	<key>PORT_NUMBER</key>
 	<string>$(PORT_NUMBER)</string>
-	<key>ADMIN_ID</key>
-	<string>$(ADMIN_ID)</string>
-	<key>ADMIN_PWD</key>
-	<string>$(ADMIN_PWD)</string>
 </dict>
 </plist>

@@ -55,7 +55,4 @@ struct RegisterView: View {
         .navigationTitle("병영번호 검색")
         .navigationBarTitleDisplayMode(.inline)
     }
-    
-   
-    
 }

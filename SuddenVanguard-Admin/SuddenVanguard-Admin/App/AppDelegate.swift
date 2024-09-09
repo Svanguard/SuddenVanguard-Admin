@@ -17,5 +17,27 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
     
     func registerDependencies() {
+        let auth = Auth()
+        let apiClientService: ApiClientService = ApiClientServiceImp()
+        
+        // MARK: - Repository
+        let getProfileDataRepository: GetProfileDataRepository = GetProfileDataRepositoryImp(apiClientService: apiClientService)
+       
+        // MARK: - Service
+        let registerService: RegisterService = RegisterServiceImp(getProfileDataRepository: getProfileDataRepository)
+        
+        // MARK: - UseCase
+        let registerUseCase: RegisterUseCase = RegisterUseCaseImp(service: registerService)
+        
+        DIContainer.register(
+            type: Auth.self,
+            auth
+        )
+        
+        DIContainer.register(
+            type: RegisterUseCase.self,
+            registerUseCase
+        )
     }
+
 }

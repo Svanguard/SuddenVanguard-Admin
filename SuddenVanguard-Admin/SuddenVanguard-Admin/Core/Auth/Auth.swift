@@ -7,30 +7,32 @@
 
 import Foundation
 
-protocol SessionCheckAuth {
-    var isSessionActive: Bool { get }
-}
-
 protocol LogInAuth {
-    func logIn()
+    func logIn(id: String, password: String) -> Bool
 }
 
-protocol LogOutAuth {
-   func logOut()
+protocol AdminChecker {
+    func checkAdmin() -> Bool
 }
 
 final class Auth {
-    private var session = false
+    let checkID = Bundle.main.object(forInfoDictionaryKey: "ADMIN_ID") as? String ?? ""
+    let checkPassword = Bundle.main.object(forInfoDictionaryKey: "ADMIN_PWD") as? String ?? ""
+    
+    var id = ""
+    var password = ""
 }
 
 extension Auth: LogInAuth {
-    func logIn() {
-        session = true
+    func logIn(id: String, password: String) -> Bool {
+        self.id = id
+        self.password = password
+        return checkAdmin()
     }
 }
 
-extension Auth: LogOutAuth {
-    func logOut() {
-        session = false
+extension Auth: AdminChecker {
+    func checkAdmin() -> Bool {
+        return self.id == checkID && self.password == checkPassword
     }
 }

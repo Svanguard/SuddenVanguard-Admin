@@ -12,6 +12,12 @@
 		41807BD52C8ED508002D3922 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BD42C8ED508002D3922 /* Auth.swift */; };
 		41807BD82C8ED53A002D3922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BD72C8ED53A002D3922 /* AppDelegate.swift */; };
 		41807BDD2C8EDF02002D3922 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BDC2C8EDF02002D3922 /* RegisterViewModel.swift */; };
+		41807BE52C8F6DB9002D3922 /* GetProfileDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BE42C8F6DB9002D3922 /* GetProfileDataRepository.swift */; };
+		41807BEA2C8F6DEA002D3922 /* GetProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BE92C8F6DEA002D3922 /* GetProfileRequest.swift */; };
+		41807BEC2C8F6DF1002D3922 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BEB2C8F6DF1002D3922 /* ProfileResponse.swift */; };
+		41807BEF2C8F6F3E002D3922 /* ProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BEE2C8F6F3E002D3922 /* ProfileDTO.swift */; };
+		41807BF22C8F6FB9002D3922 /* GetProfileDataRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BF12C8F6FB9002D3922 /* GetProfileDataRepositoryImp.swift */; };
+		41807BF42C8F7038002D3922 /* ProfileEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BF32C8F7038002D3922 /* ProfileEndPoint.swift */; };
 		419397F22C8DF422005AE3D6 /* SuddenVanguard_AdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419397F12C8DF422005AE3D6 /* SuddenVanguard_AdminApp.swift */; };
 		419397F62C8DF424005AE3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419397F52C8DF424005AE3D6 /* Assets.xcassets */; };
 		419397F92C8DF424005AE3D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419397F82C8DF424005AE3D6 /* Preview Assets.xcassets */; };
@@ -23,10 +29,10 @@
 		419398132C8E1A43005AE3D6 /* HttpResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398122C8E1A43005AE3D6 /* HttpResponseStatus.swift */; };
 		419398162C8E1A98005AE3D6 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398152C8E1A98005AE3D6 /* ApiError.swift */; };
 		419398192C8E1ABF005AE3D6 /* ApiClientServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398182C8E1ABF005AE3D6 /* ApiClientServiceImp.swift */; };
-		4193981F2C8E1B37005AE3D6 /* AdminUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4193981E2C8E1B37005AE3D6 /* AdminUseCase.swift */; };
-		419398222C8E1B7E005AE3D6 /* AdminUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398212C8E1B7E005AE3D6 /* AdminUseCaseImp.swift */; };
-		419398252C8E1B99005AE3D6 /* AdminServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398242C8E1B99005AE3D6 /* AdminServiceImp.swift */; };
-		419398282C8E1BA9005AE3D6 /* AdminService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398272C8E1BA9005AE3D6 /* AdminService.swift */; };
+		4193981F2C8E1B37005AE3D6 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4193981E2C8E1B37005AE3D6 /* RegisterUseCase.swift */; };
+		419398222C8E1B7E005AE3D6 /* RegisterUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398212C8E1B7E005AE3D6 /* RegisterUseCaseImp.swift */; };
+		419398252C8E1B99005AE3D6 /* RegisterServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398242C8E1B99005AE3D6 /* RegisterServiceImp.swift */; };
+		419398282C8E1BA9005AE3D6 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398272C8E1BA9005AE3D6 /* RegisterService.swift */; };
 		4193982C2C8E1EE1005AE3D6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4193982B2C8E1EE1005AE3D6 /* RegisterView.swift */; };
 		4193982F2C8E1F02005AE3D6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4193982E2C8E1F02005AE3D6 /* MainViewModel.swift */; };
 		419398312C8E1FD6005AE3D6 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398302C8E1FD6005AE3D6 /* UserRowView.swift */; };
@@ -42,6 +48,12 @@
 		41807BDA2C8ED7C4002D3922 /* ApiKey.Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ApiKey.Config.xcconfig; sourceTree = "<group>"; };
 		41807BDB2C8ED80B002D3922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		41807BDC2C8EDF02002D3922 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		41807BE42C8F6DB9002D3922 /* GetProfileDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileDataRepository.swift; sourceTree = "<group>"; };
+		41807BE92C8F6DEA002D3922 /* GetProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileRequest.swift; sourceTree = "<group>"; };
+		41807BEB2C8F6DF1002D3922 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
+		41807BEE2C8F6F3E002D3922 /* ProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDTO.swift; sourceTree = "<group>"; };
+		41807BF12C8F6FB9002D3922 /* GetProfileDataRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileDataRepositoryImp.swift; sourceTree = "<group>"; };
+		41807BF32C8F7038002D3922 /* ProfileEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEndPoint.swift; sourceTree = "<group>"; };
 		419397EE2C8DF422005AE3D6 /* SuddenVanguard-Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuddenVanguard-Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		419397F12C8DF422005AE3D6 /* SuddenVanguard_AdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuddenVanguard_AdminApp.swift; sourceTree = "<group>"; };
 		419397F52C8DF424005AE3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,10 +66,10 @@
 		419398122C8E1A43005AE3D6 /* HttpResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponseStatus.swift; sourceTree = "<group>"; };
 		419398152C8E1A98005AE3D6 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		419398182C8E1ABF005AE3D6 /* ApiClientServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientServiceImp.swift; sourceTree = "<group>"; };
-		4193981E2C8E1B37005AE3D6 /* AdminUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminUseCase.swift; sourceTree = "<group>"; };
-		419398212C8E1B7E005AE3D6 /* AdminUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminUseCaseImp.swift; sourceTree = "<group>"; };
-		419398242C8E1B99005AE3D6 /* AdminServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminServiceImp.swift; sourceTree = "<group>"; };
-		419398272C8E1BA9005AE3D6 /* AdminService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminService.swift; sourceTree = "<group>"; };
+		4193981E2C8E1B37005AE3D6 /* RegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
+		419398212C8E1B7E005AE3D6 /* RegisterUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCaseImp.swift; sourceTree = "<group>"; };
+		419398242C8E1B99005AE3D6 /* RegisterServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterServiceImp.swift; sourceTree = "<group>"; };
+		419398272C8E1BA9005AE3D6 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		4193982B2C8E1EE1005AE3D6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		4193982E2C8E1F02005AE3D6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		419398302C8E1FD6005AE3D6 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
@@ -153,6 +165,55 @@
 			name = Register;
 			sourceTree = "<group>";
 		};
+		41807BE32C8F6DAA002D3922 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				41807BE42C8F6DB9002D3922 /* GetProfileDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		41807BE62C8F6DCB002D3922 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				41807BE72C8F6DD4002D3922 /* Request */,
+				41807BE82C8F6DD9002D3922 /* Response */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		41807BE72C8F6DD4002D3922 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				41807BE92C8F6DEA002D3922 /* GetProfileRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		41807BE82C8F6DD9002D3922 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				41807BEB2C8F6DF1002D3922 /* ProfileResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		41807BED2C8F6F33002D3922 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				41807BEE2C8F6F3E002D3922 /* ProfileDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		41807BF02C8F6FA1002D3922 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				41807BF12C8F6FB9002D3922 /* GetProfileDataRepositoryImp.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		419397E52C8DF422005AE3D6 = {
 			isa = PBXGroup;
 			children = (
@@ -178,9 +239,9 @@
 				41807BCD2C8ED4B3002D3922 /* Core */,
 				419398322C8E1FF4005AE3D6 /* Common */,
 				4193981C2C8E1B03005AE3D6 /* Data */,
-				4193981B2C8E1AFC005AE3D6 /* Presentation */,
 				4193981A2C8E1AF5005AE3D6 /* Domain */,
 				419398082C8E19C6005AE3D6 /* NetworkService */,
+				4193981B2C8E1AFC005AE3D6 /* Presentation */,
 				419397F52C8DF424005AE3D6 /* Assets.xcassets */,
 				419397F72C8DF424005AE3D6 /* Preview Content */,
 			);
@@ -236,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				419398152C8E1A98005AE3D6 /* ApiError.swift */,
+				41807BF32C8F7038002D3922 /* ProfileEndPoint.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -251,6 +313,8 @@
 		4193981A2C8E1AF5005AE3D6 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				41807BE62C8F6DCB002D3922 /* Entity */,
+				41807BE32C8F6DAA002D3922 /* Repository */,
 				419398262C8E1B9D005AE3D6 /* Service */,
 				419398202C8E1B68005AE3D6 /* UseCaseImplementation */,
 				4193981D2C8E1B2A005AE3D6 /* UseCase */,
@@ -270,6 +334,8 @@
 		4193981C2C8E1B03005AE3D6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				41807BED2C8F6F33002D3922 /* DTO */,
+				41807BF02C8F6FA1002D3922 /* Repository */,
 				419398232C8E1B87005AE3D6 /* Service */,
 			);
 			path = Data;
@@ -278,7 +344,7 @@
 		4193981D2C8E1B2A005AE3D6 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				4193981E2C8E1B37005AE3D6 /* AdminUseCase.swift */,
+				4193981E2C8E1B37005AE3D6 /* RegisterUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -286,7 +352,7 @@
 		419398202C8E1B68005AE3D6 /* UseCaseImplementation */ = {
 			isa = PBXGroup;
 			children = (
-				419398212C8E1B7E005AE3D6 /* AdminUseCaseImp.swift */,
+				419398212C8E1B7E005AE3D6 /* RegisterUseCaseImp.swift */,
 			);
 			path = UseCaseImplementation;
 			sourceTree = "<group>";
@@ -294,7 +360,7 @@
 		419398232C8E1B87005AE3D6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				419398242C8E1B99005AE3D6 /* AdminServiceImp.swift */,
+				419398242C8E1B99005AE3D6 /* RegisterServiceImp.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -302,7 +368,7 @@
 		419398262C8E1B9D005AE3D6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				419398272C8E1BA9005AE3D6 /* AdminService.swift */,
+				419398272C8E1BA9005AE3D6 /* RegisterService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -381,11 +447,12 @@
 			};
 			buildConfigurationList = 419397E92C8DF422005AE3D6 /* Build configuration list for PBXProject "SuddenVanguard-Admin" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 419397E52C8DF422005AE3D6;
 			packageReferences = (
@@ -417,25 +484,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41807BE52C8F6DB9002D3922 /* GetProfileDataRepository.swift in Sources */,
 				41807BD82C8ED53A002D3922 /* AppDelegate.swift in Sources */,
 				4193980E2C8E19FF005AE3D6 /* EndPoint.swift in Sources */,
 				4193980A2C8E19D6005AE3D6 /* ApiClientService.swift in Sources */,
 				419398112C8E1A2E005AE3D6 /* HTTPMethod.swift in Sources */,
-				419398222C8E1B7E005AE3D6 /* AdminUseCaseImp.swift in Sources */,
+				419398222C8E1B7E005AE3D6 /* RegisterUseCaseImp.swift in Sources */,
 				419398192C8E1ABF005AE3D6 /* ApiClientServiceImp.swift in Sources */,
 				419398072C8DFBCF005AE3D6 /* SearchFieldView.swift in Sources */,
+				41807BEC2C8F6DF1002D3922 /* ProfileResponse.swift in Sources */,
+				41807BF22C8F6FB9002D3922 /* GetProfileDataRepositoryImp.swift in Sources */,
 				419398162C8E1A98005AE3D6 /* ApiError.swift in Sources */,
 				419398312C8E1FD6005AE3D6 /* UserRowView.swift in Sources */,
-				4193981F2C8E1B37005AE3D6 /* AdminUseCase.swift in Sources */,
-				419398282C8E1BA9005AE3D6 /* AdminService.swift in Sources */,
+				41807BEF2C8F6F3E002D3922 /* ProfileDTO.swift in Sources */,
+				4193981F2C8E1B37005AE3D6 /* RegisterUseCase.swift in Sources */,
+				41807BF42C8F7038002D3922 /* ProfileEndPoint.swift in Sources */,
+				419398282C8E1BA9005AE3D6 /* RegisterService.swift in Sources */,
 				41807BD52C8ED508002D3922 /* Auth.swift in Sources */,
 				4193982C2C8E1EE1005AE3D6 /* RegisterView.swift in Sources */,
 				419398352C8E2013005AE3D6 /* SearchUserData.swift in Sources */,
 				419398052C8DFB12005AE3D6 /* MainView.swift in Sources */,
 				419398132C8E1A43005AE3D6 /* HttpResponseStatus.swift in Sources */,
 				41807BD32C8ED4FB002D3922 /* Injected.swift in Sources */,
-				419398252C8E1B99005AE3D6 /* AdminServiceImp.swift in Sources */,
+				419398252C8E1B99005AE3D6 /* RegisterServiceImp.swift in Sources */,
 				419397F22C8DF422005AE3D6 /* SuddenVanguard_AdminApp.swift in Sources */,
+				41807BEA2C8F6DEA002D3922 /* GetProfileRequest.swift in Sources */,
 				41807BD12C8ED4E7002D3922 /* DIContainer.swift in Sources */,
 				4193982F2C8E1F02005AE3D6 /* MainViewModel.swift in Sources */,
 				41807BDD2C8EDF02002D3922 /* RegisterViewModel.swift in Sources */,
@@ -447,6 +520,7 @@
 /* Begin XCBuildConfiguration section */
 		419397FA2C8DF424005AE3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41807BDA2C8ED7C4002D3922 /* ApiKey.Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -510,6 +584,7 @@
 		};
 		419397FB2C8DF424005AE3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41807BDA2C8ED7C4002D3922 /* ApiKey.Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -566,6 +641,7 @@
 		};
 		419397FD2C8DF424005AE3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41807BDA2C8ED7C4002D3922 /* ApiKey.Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -576,11 +652,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SuddenVanguard-Admin/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "서든뱅가드-관리자";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,14 +667,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dongho.SuddenVanguard-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		419397FE2C8DF424005AE3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41807BDA2C8ED7C4002D3922 /* ApiKey.Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -607,11 +690,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SuddenVanguard-Admin/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "서든뱅가드-관리자";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,9 +705,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dongho.SuddenVanguard-Admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
