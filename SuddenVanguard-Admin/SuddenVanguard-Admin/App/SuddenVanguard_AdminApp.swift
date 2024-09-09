@@ -11,7 +11,7 @@ import SwiftUI
 struct SuddenVanguard_AdminApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
