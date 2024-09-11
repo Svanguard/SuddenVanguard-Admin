@@ -8,12 +8,16 @@
 import Combine
 
 final class RegisterServiceImp: RegisterService {
+    
     private let getProfileDataRepository: GetProfileDataRepository
+    private let registerRepository: RegisterRepository
     
     init(
-        getProfileDataRepository: GetProfileDataRepository
+        getProfileDataRepository: GetProfileDataRepository,
+        registerRepository: RegisterRepository
     ) {
         self.getProfileDataRepository = getProfileDataRepository
+        self.registerRepository = registerRepository
     }
     
     func searchNumberToSudden(suddenNumber: Int) -> AnyPublisher<SearchUserData, Error> {
@@ -25,6 +29,12 @@ final class RegisterServiceImp: RegisterService {
                     userImage: response.userImage
                 )
             }
+            .eraseToAnyPublisher()
+    }
+    
+    func registerUser(request: RegisterRequest) -> AnyPublisher<[ProgramUserData], Error> {
+        return registerRepository.registerUser(request: request)
+            .map { $0.userDatas }
             .eraseToAnyPublisher()
     }
 }

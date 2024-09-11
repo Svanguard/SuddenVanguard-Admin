@@ -8,13 +8,13 @@
 import Foundation
 
 struct SearchUserData: Identifiable, Hashable {
-    public let suddenNumber: Int
-    public let userName: String
-    public let userImage: String
+    let suddenNumber: Int
+    let userName: String
+    let userImage: String
     
-    public var id: String { "\(suddenNumber)" }
+    var id: String { "\(suddenNumber)" }
 
-    public init(
+    init(
         suddenNumber: Int,
         userName: String,
         userImage: String

@@ -18,8 +18,7 @@ struct RegisterUseCaseImp: RegisterUseCase {
         service.searchNumberToSudden(suddenNumber: suddenNumber)
     }
     
-    func registerUser() {
-        print("등록")
+    func registerUser(request: RegisterRequest) -> AnyPublisher<[ProgramUserData], Error> {
+        service.registerUser(request: request)
     }
-    
 }

@@ -9,4 +9,6 @@ import Combine
 
 protocol RegisterService {
     func searchNumberToSudden(suddenNumber: Int) -> AnyPublisher<SearchUserData, Error>
+    
+    func registerUser(request: RegisterRequest)  -> AnyPublisher<[ProgramUserData], Error>
 }

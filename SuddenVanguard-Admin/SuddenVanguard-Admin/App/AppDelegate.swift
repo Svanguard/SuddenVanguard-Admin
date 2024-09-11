@@ -22,12 +22,25 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         // MARK: - Repository
         let getProfileDataRepository: GetProfileDataRepository = GetProfileDataRepositoryImp(apiClientService: apiClientService)
-       
+        let getAllDataRepository: GetAllDataRepository = GetAllDataRepositoryImp(apiClientService: apiClientService)
+        let registerRepository: RegisterRepository = RegisterRepositoryImp(apiClientService: apiClientService)
+        let deleteRepository: DeleteRepository = DeleteRepositoryImp(apiClientService: apiClientService)
+        
         // MARK: - Service
-        let registerService: RegisterService = RegisterServiceImp(getProfileDataRepository: getProfileDataRepository)
+        let registerService: RegisterService = RegisterServiceImp(
+            getProfileDataRepository: getProfileDataRepository,
+            registerRepository: registerRepository
+        )
+        
+        let adminService: AdminService = AdminServiceImp(
+            deleteRepository: deleteRepository,
+            getAllDataRepository: getAllDataRepository
+        )
         
         // MARK: - UseCase
         let registerUseCase: RegisterUseCase = RegisterUseCaseImp(service: registerService)
+        
+        let adminUseCase: AdminUseCase = AdminUseCaseImp(service: adminService)
         
         DIContainer.register(
             type: Auth.self,
@@ -37,6 +50,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         DIContainer.register(
             type: RegisterUseCase.self,
             registerUseCase
+        )
+        
+        DIContainer.register(
+            type: AdminUseCase.self,
+            adminUseCase
         )
     }
 

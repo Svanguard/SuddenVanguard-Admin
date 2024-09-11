@@ -34,23 +34,51 @@ struct RegisterView: View {
     @ViewBuilder
     private var NumberSearch: some View {
         VStack {
-            if viewModel.searchQuery.isEmpty {
-                Text("병영번호를 입력해주세요")
+            if viewModel.checkData {
+                if viewModel.isLoading {
+                    Spacer()
+                    ProgressView()
+                } else {
+                    List {
+                        Button {
+                            viewModel.addUser(user: viewModel.userData)
+                        } label: {
+                            UserRowView(user: viewModel.userData)
+                        }
+                    }
+                    .listStyle(.plain)
+                }
+            }
+            
+            Spacer()
+            
+            if !viewModel.selectedUser.isEmpty {
+                Text("현재 선택된 유저")
                     .foregroundStyle(.gray)
                     .font(.body)
                     .padding()
-            } else if viewModel.isLoading {
-                ProgressView()
-            } else {
-                List {
-                    NavigationLink(destination: {
-                        EmptyView()
-                    }) {
-                        UserRowView(user: viewModel.userData)
+                
+                List(viewModel.selectedUser) { user in
+                    Button {
+                        viewModel.removeUser(user: user)
+                    } label: {
+                        UserRowView(user: user)
                     }
                 }
+                .frame(height: UIScreen.main.bounds.height * 0.3)
                 .listStyle(.plain)
             }
+
+            Button {
+                viewModel.registerUser()
+            } label: {
+                Text("핵의심 유저 등록")
+                    .padding()
+                    .foregroundColor(.gray)
+                    .frame(width: UIScreen.main.bounds.width * 0.6)
+                    .background(Color(UIColor.loginButton).opacity(0.7))
+            }
+            .padding()
         }
         .navigationTitle("병영번호 검색")
         .navigationBarTitleDisplayMode(.inline)

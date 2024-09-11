@@ -8,7 +8,8 @@
 import Combine
 
 protocol RegisterUseCase {
-    func registerUser()
-    
     func searchNumberToSudden(suddenNumber: Int) -> AnyPublisher<SearchUserData, Error>
+    
+    func registerUser(request: RegisterRequest)  -> AnyPublisher<[ProgramUserData], Error>
+    
 }

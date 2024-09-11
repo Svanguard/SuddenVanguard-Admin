@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417552ED2C918B9900549F5C /* DeleteDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552EC2C918B9900549F5C /* DeleteDTO.swift */; };
+		417552EF2C918BC400549F5C /* GetAllDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552EE2C918BC400549F5C /* GetAllDataDTO.swift */; };
+		417552F12C918C4900549F5C /* DeleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552F02C918C4900549F5C /* DeleteRequest.swift */; };
+		417552F32C918C5000549F5C /* DeleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552F22C918C5000549F5C /* DeleteResponse.swift */; };
+		417552F52C918CB900549F5C /* DeleteEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552F42C918CB900549F5C /* DeleteEndPoint.swift */; };
+		417552F72C918EC600549F5C /* DeleteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552F62C918EC600549F5C /* DeleteRepository.swift */; };
+		417552F92C918F0300549F5C /* AdminUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552F82C918F0300549F5C /* AdminUseCase.swift */; };
+		417552FB2C918F4100549F5C /* AdminService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552FA2C918F4100549F5C /* AdminService.swift */; };
+		417552FD2C918F5B00549F5C /* AdminUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552FC2C918F5B00549F5C /* AdminUseCaseImp.swift */; };
+		417552FF2C918FA500549F5C /* AdminServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417552FE2C918FA500549F5C /* AdminServiceImp.swift */; };
+		417553012C91906F00549F5C /* DeleteRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417553002C91906F00549F5C /* DeleteRepositoryImp.swift */; };
+		417553032C91927500549F5C /* ProgramUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417553022C91927500549F5C /* ProgramUserData.swift */; };
+		417553052C91B72B00549F5C /* GetAllDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417553042C91B72B00549F5C /* GetAllDataResponse.swift */; };
+		417553072C91B77C00549F5C /* GetAllDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417553062C91B77C00549F5C /* GetAllDataRequest.swift */; };
+		417553092C91B7D700549F5C /* GetAllDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417553082C91B7D700549F5C /* GetAllDataRepository.swift */; };
+		4175530B2C91B7EB00549F5C /* GetAllDataEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4175530A2C91B7EB00549F5C /* GetAllDataEndPoint.swift */; };
+		4175530D2C91BBC500549F5C /* GetAllDataRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4175530C2C91BBC500549F5C /* GetAllDataRepositoryImp.swift */; };
+		417553102C92197A00549F5C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4175530F2C92197A00549F5C /* SafariView.swift */; };
+		4178BF3D2C902C680057C599 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF3C2C902C680057C599 /* AdminView.swift */; };
+		4178BF3F2C902C6E0057C599 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF3E2C902C6E0057C599 /* AdminViewModel.swift */; };
+		4178BF422C903DDF0057C599 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF412C903DDF0057C599 /* HapticFeedbackManager.swift */; };
+		4178BF442C903FF90057C599 /* RegisterDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF432C903FF90057C599 /* RegisterDTO.swift */; };
+		4178BF462C9040730057C599 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF452C9040730057C599 /* RegisterRequest.swift */; };
+		4178BF482C90407A0057C599 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF472C90407A0057C599 /* RegisterResponse.swift */; };
+		4178BF4A2C9041A40057C599 /* RegisterEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF492C9041A40057C599 /* RegisterEndPoint.swift */; };
+		4178BF4C2C9054F80057C599 /* RegisterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF4B2C9054F80057C599 /* RegisterRepository.swift */; };
+		4178BF4E2C90555A0057C599 /* RegisterRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF4D2C90555A0057C599 /* RegisterRepositoryImp.swift */; };
 		41807BD12C8ED4E7002D3922 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BD02C8ED4E6002D3922 /* DIContainer.swift */; };
 		41807BD32C8ED4FB002D3922 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BD22C8ED4FB002D3922 /* Injected.swift */; };
 		41807BD52C8ED508002D3922 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41807BD42C8ED508002D3922 /* Auth.swift */; };
@@ -22,7 +49,7 @@
 		419397F62C8DF424005AE3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419397F52C8DF424005AE3D6 /* Assets.xcassets */; };
 		419397F92C8DF424005AE3D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419397F82C8DF424005AE3D6 /* Preview Assets.xcassets */; };
 		419398052C8DFB12005AE3D6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398042C8DFB12005AE3D6 /* MainView.swift */; };
-		419398072C8DFBCF005AE3D6 /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398062C8DFBCF005AE3D6 /* SearchFieldView.swift */; };
+		419398072C8DFBCF005AE3D6 /* AdminButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398062C8DFBCF005AE3D6 /* AdminButtonView.swift */; };
 		4193980A2C8E19D6005AE3D6 /* ApiClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398092C8E19D6005AE3D6 /* ApiClientService.swift */; };
 		4193980E2C8E19FF005AE3D6 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4193980D2C8E19FF005AE3D6 /* EndPoint.swift */; };
 		419398112C8E1A2E005AE3D6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419398102C8E1A2E005AE3D6 /* HTTPMethod.swift */; };
@@ -41,6 +68,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417552EC2C918B9900549F5C /* DeleteDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteDTO.swift; sourceTree = "<group>"; };
+		417552EE2C918BC400549F5C /* GetAllDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDataDTO.swift; sourceTree = "<group>"; };
+		417552F02C918C4900549F5C /* DeleteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRequest.swift; sourceTree = "<group>"; };
+		417552F22C918C5000549F5C /* DeleteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteResponse.swift; sourceTree = "<group>"; };
+		417552F42C918CB900549F5C /* DeleteEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEndPoint.swift; sourceTree = "<group>"; };
+		417552F62C918EC600549F5C /* DeleteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRepository.swift; sourceTree = "<group>"; };
+		417552F82C918F0300549F5C /* AdminUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminUseCase.swift; sourceTree = "<group>"; };
+		417552FA2C918F4100549F5C /* AdminService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminService.swift; sourceTree = "<group>"; };
+		417552FC2C918F5B00549F5C /* AdminUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminUseCaseImp.swift; sourceTree = "<group>"; };
+		417552FE2C918FA500549F5C /* AdminServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminServiceImp.swift; sourceTree = "<group>"; };
+		417553002C91906F00549F5C /* DeleteRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRepositoryImp.swift; sourceTree = "<group>"; };
+		417553022C91927500549F5C /* ProgramUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramUserData.swift; sourceTree = "<group>"; };
+		417553042C91B72B00549F5C /* GetAllDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDataResponse.swift; sourceTree = "<group>"; };
+		417553062C91B77C00549F5C /* GetAllDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDataRequest.swift; sourceTree = "<group>"; };
+		417553082C91B7D700549F5C /* GetAllDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDataRepository.swift; sourceTree = "<group>"; };
+		4175530A2C91B7EB00549F5C /* GetAllDataEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDataEndPoint.swift; sourceTree = "<group>"; };
+		4175530C2C91BBC500549F5C /* GetAllDataRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDataRepositoryImp.swift; sourceTree = "<group>"; };
+		4175530F2C92197A00549F5C /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		4178BF3C2C902C680057C599 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		4178BF3E2C902C6E0057C599 /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
+		4178BF412C903DDF0057C599 /* HapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackManager.swift; sourceTree = "<group>"; };
+		4178BF432C903FF90057C599 /* RegisterDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDTO.swift; sourceTree = "<group>"; };
+		4178BF452C9040730057C599 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		4178BF472C90407A0057C599 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		4178BF492C9041A40057C599 /* RegisterEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEndPoint.swift; sourceTree = "<group>"; };
+		4178BF4B2C9054F80057C599 /* RegisterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepository.swift; sourceTree = "<group>"; };
+		4178BF4D2C90555A0057C599 /* RegisterRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepositoryImp.swift; sourceTree = "<group>"; };
 		41807BD02C8ED4E6002D3922 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		41807BD22C8ED4FB002D3922 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		41807BD42C8ED508002D3922 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
@@ -59,7 +113,7 @@
 		419397F52C8DF424005AE3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419397F82C8DF424005AE3D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		419398042C8DFB12005AE3D6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		419398062C8DFBCF005AE3D6 /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
+		419398062C8DFBCF005AE3D6 /* AdminButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminButtonView.swift; sourceTree = "<group>"; };
 		419398092C8E19D6005AE3D6 /* ApiClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientService.swift; sourceTree = "<group>"; };
 		4193980D2C8E19FF005AE3D6 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		419398102C8E1A2E005AE3D6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -88,6 +142,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4175530E2C92197500549F5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4175530F2C92197A00549F5C /* SafariView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4178BF392C902C520057C599 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				4178BF3B2C902C600057C599 /* ViewModel */,
+				4178BF3A2C902C5B0057C599 /* View */,
+			);
+			name = Admin;
+			sourceTree = "<group>";
+		};
+		4178BF3A2C902C5B0057C599 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				419398062C8DFBCF005AE3D6 /* AdminButtonView.swift */,
+				4178BF3C2C902C680057C599 /* AdminView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4178BF3B2C902C600057C599 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4178BF3E2C902C6E0057C599 /* AdminViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		4178BF402C903DCF0057C599 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4178BF412C903DDF0057C599 /* HapticFeedbackManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		41807BCD2C8ED4B3002D3922 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +265,9 @@
 			isa = PBXGroup;
 			children = (
 				41807BE42C8F6DB9002D3922 /* GetProfileDataRepository.swift */,
+				4178BF4B2C9054F80057C599 /* RegisterRepository.swift */,
+				417552F62C918EC600549F5C /* DeleteRepository.swift */,
+				417553082C91B7D700549F5C /* GetAllDataRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -186,6 +285,9 @@
 			isa = PBXGroup;
 			children = (
 				41807BE92C8F6DEA002D3922 /* GetProfileRequest.swift */,
+				4178BF452C9040730057C599 /* RegisterRequest.swift */,
+				417552F02C918C4900549F5C /* DeleteRequest.swift */,
+				417553062C91B77C00549F5C /* GetAllDataRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -194,6 +296,9 @@
 			isa = PBXGroup;
 			children = (
 				41807BEB2C8F6DF1002D3922 /* ProfileResponse.swift */,
+				4178BF472C90407A0057C599 /* RegisterResponse.swift */,
+				417552F22C918C5000549F5C /* DeleteResponse.swift */,
+				417553042C91B72B00549F5C /* GetAllDataResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -202,6 +307,9 @@
 			isa = PBXGroup;
 			children = (
 				41807BEE2C8F6F3E002D3922 /* ProfileDTO.swift */,
+				4178BF432C903FF90057C599 /* RegisterDTO.swift */,
+				417552EC2C918B9900549F5C /* DeleteDTO.swift */,
+				417552EE2C918BC400549F5C /* GetAllDataDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -210,6 +318,9 @@
 			isa = PBXGroup;
 			children = (
 				41807BF12C8F6FB9002D3922 /* GetProfileDataRepositoryImp.swift */,
+				4178BF4D2C90555A0057C599 /* RegisterRepositoryImp.swift */,
+				417553002C91906F00549F5C /* DeleteRepositoryImp.swift */,
+				4175530C2C91BBC500549F5C /* GetAllDataRepositoryImp.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -272,7 +383,11 @@
 		4193980B2C8E19EB005AE3D6 /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
+				41807BF32C8F7038002D3922 /* ProfileEndPoint.swift */,
+				4178BF492C9041A40057C599 /* RegisterEndPoint.swift */,
 				4193980D2C8E19FF005AE3D6 /* EndPoint.swift */,
+				417552F42C918CB900549F5C /* DeleteEndPoint.swift */,
+				4175530A2C91B7EB00549F5C /* GetAllDataEndPoint.swift */,
 			);
 			path = EndPoint;
 			sourceTree = "<group>";
@@ -297,7 +412,6 @@
 			isa = PBXGroup;
 			children = (
 				419398152C8E1A98005AE3D6 /* ApiError.swift */,
-				41807BF32C8F7038002D3922 /* ProfileEndPoint.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -325,8 +439,9 @@
 		4193981B2C8E1AFC005AE3D6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				41807BE12C8EDFF6002D3922 /* Register */,
 				41807BDE2C8EDFCB002D3922 /* Main */,
+				4178BF392C902C520057C599 /* Admin */,
+				41807BE12C8EDFF6002D3922 /* Register */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -345,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				4193981E2C8E1B37005AE3D6 /* RegisterUseCase.swift */,
+				417552F82C918F0300549F5C /* AdminUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -353,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				419398212C8E1B7E005AE3D6 /* RegisterUseCaseImp.swift */,
+				417552FC2C918F5B00549F5C /* AdminUseCaseImp.swift */,
 			);
 			path = UseCaseImplementation;
 			sourceTree = "<group>";
@@ -361,6 +478,7 @@
 			isa = PBXGroup;
 			children = (
 				419398242C8E1B99005AE3D6 /* RegisterServiceImp.swift */,
+				417552FE2C918FA500549F5C /* AdminServiceImp.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -369,6 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				419398272C8E1BA9005AE3D6 /* RegisterService.swift */,
+				417552FA2C918F4100549F5C /* AdminService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -376,7 +495,6 @@
 		4193982A2C8E1D33005AE3D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				419398062C8DFBCF005AE3D6 /* SearchFieldView.swift */,
 				4193982B2C8E1EE1005AE3D6 /* RegisterView.swift */,
 				419398302C8E1FD6005AE3D6 /* UserRowView.swift */,
 			);
@@ -394,6 +512,8 @@
 		419398322C8E1FF4005AE3D6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4175530E2C92197500549F5C /* View */,
+				4178BF402C903DCF0057C599 /* Manager */,
 				419398332C8E2000005AE3D6 /* Entities */,
 			);
 			path = Common;
@@ -403,6 +523,7 @@
 			isa = PBXGroup;
 			children = (
 				419398342C8E2013005AE3D6 /* SearchUserData.swift */,
+				417553022C91927500549F5C /* ProgramUserData.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -487,31 +608,58 @@
 				41807BE52C8F6DB9002D3922 /* GetProfileDataRepository.swift in Sources */,
 				41807BD82C8ED53A002D3922 /* AppDelegate.swift in Sources */,
 				4193980E2C8E19FF005AE3D6 /* EndPoint.swift in Sources */,
+				417553052C91B72B00549F5C /* GetAllDataResponse.swift in Sources */,
 				4193980A2C8E19D6005AE3D6 /* ApiClientService.swift in Sources */,
 				419398112C8E1A2E005AE3D6 /* HTTPMethod.swift in Sources */,
+				4178BF4E2C90555A0057C599 /* RegisterRepositoryImp.swift in Sources */,
 				419398222C8E1B7E005AE3D6 /* RegisterUseCaseImp.swift in Sources */,
+				417552F92C918F0300549F5C /* AdminUseCase.swift in Sources */,
+				4178BF3F2C902C6E0057C599 /* AdminViewModel.swift in Sources */,
 				419398192C8E1ABF005AE3D6 /* ApiClientServiceImp.swift in Sources */,
-				419398072C8DFBCF005AE3D6 /* SearchFieldView.swift in Sources */,
+				419398072C8DFBCF005AE3D6 /* AdminButtonView.swift in Sources */,
+				4175530B2C91B7EB00549F5C /* GetAllDataEndPoint.swift in Sources */,
+				417552F12C918C4900549F5C /* DeleteRequest.swift in Sources */,
 				41807BEC2C8F6DF1002D3922 /* ProfileResponse.swift in Sources */,
 				41807BF22C8F6FB9002D3922 /* GetProfileDataRepositoryImp.swift in Sources */,
 				419398162C8E1A98005AE3D6 /* ApiError.swift in Sources */,
 				419398312C8E1FD6005AE3D6 /* UserRowView.swift in Sources */,
 				41807BEF2C8F6F3E002D3922 /* ProfileDTO.swift in Sources */,
+				417552F72C918EC600549F5C /* DeleteRepository.swift in Sources */,
 				4193981F2C8E1B37005AE3D6 /* RegisterUseCase.swift in Sources */,
+				417553092C91B7D700549F5C /* GetAllDataRepository.swift in Sources */,
 				41807BF42C8F7038002D3922 /* ProfileEndPoint.swift in Sources */,
 				419398282C8E1BA9005AE3D6 /* RegisterService.swift in Sources */,
 				41807BD52C8ED508002D3922 /* Auth.swift in Sources */,
 				4193982C2C8E1EE1005AE3D6 /* RegisterView.swift in Sources */,
+				417552F52C918CB900549F5C /* DeleteEndPoint.swift in Sources */,
 				419398352C8E2013005AE3D6 /* SearchUserData.swift in Sources */,
 				419398052C8DFB12005AE3D6 /* MainView.swift in Sources */,
+				417552FB2C918F4100549F5C /* AdminService.swift in Sources */,
+				417552EF2C918BC400549F5C /* GetAllDataDTO.swift in Sources */,
+				4178BF422C903DDF0057C599 /* HapticFeedbackManager.swift in Sources */,
+				417553012C91906F00549F5C /* DeleteRepositoryImp.swift in Sources */,
+				417552F32C918C5000549F5C /* DeleteResponse.swift in Sources */,
+				417553102C92197A00549F5C /* SafariView.swift in Sources */,
+				4178BF3D2C902C680057C599 /* AdminView.swift in Sources */,
+				4178BF462C9040730057C599 /* RegisterRequest.swift in Sources */,
+				4178BF4C2C9054F80057C599 /* RegisterRepository.swift in Sources */,
 				419398132C8E1A43005AE3D6 /* HttpResponseStatus.swift in Sources */,
+				417552FD2C918F5B00549F5C /* AdminUseCaseImp.swift in Sources */,
+				4178BF442C903FF90057C599 /* RegisterDTO.swift in Sources */,
 				41807BD32C8ED4FB002D3922 /* Injected.swift in Sources */,
+				417553032C91927500549F5C /* ProgramUserData.swift in Sources */,
+				4178BF4A2C9041A40057C599 /* RegisterEndPoint.swift in Sources */,
 				419398252C8E1B99005AE3D6 /* RegisterServiceImp.swift in Sources */,
 				419397F22C8DF422005AE3D6 /* SuddenVanguard_AdminApp.swift in Sources */,
 				41807BEA2C8F6DEA002D3922 /* GetProfileRequest.swift in Sources */,
+				417553072C91B77C00549F5C /* GetAllDataRequest.swift in Sources */,
+				4175530D2C91BBC500549F5C /* GetAllDataRepositoryImp.swift in Sources */,
 				41807BD12C8ED4E7002D3922 /* DIContainer.swift in Sources */,
 				4193982F2C8E1F02005AE3D6 /* MainViewModel.swift in Sources */,
 				41807BDD2C8EDF02002D3922 /* RegisterViewModel.swift in Sources */,
+				4178BF482C90407A0057C599 /* RegisterResponse.swift in Sources */,
+				417552ED2C918B9900549F5C /* DeleteDTO.swift in Sources */,
+				417552FF2C918FA500549F5C /* AdminServiceImp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
