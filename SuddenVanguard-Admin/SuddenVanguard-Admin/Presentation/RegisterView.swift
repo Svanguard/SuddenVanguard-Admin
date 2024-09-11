@@ -7,8 +7,18 @@
 
 import SwiftUI
 
+protocol RegisterViewDelegate: AnyObject {
+    func didRegisterUsers(_ users: [ProgramUserData])
+}
+
 struct RegisterView: View {
-    @StateObject var viewModel = RegisterViewModel()
+    @StateObject var viewModel: RegisterViewModel
+    
+    init(delegate: RegisterViewDelegate) {
+        let viewModel = RegisterViewModel()
+        viewModel.delegate = delegate
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         if #available(iOS 17.0, *) {
@@ -52,13 +62,13 @@ struct RegisterView: View {
             
             Spacer()
             
-            if !viewModel.selectedUser.isEmpty {
+            if !viewModel.selectedUsers.isEmpty {
                 Text("현재 선택된 유저")
                     .foregroundStyle(.gray)
                     .font(.body)
                     .padding()
                 
-                List(viewModel.selectedUser) { user in
+                List(viewModel.selectedUsers) { user in
                     Button {
                         viewModel.removeUser(user: user)
                     } label: {

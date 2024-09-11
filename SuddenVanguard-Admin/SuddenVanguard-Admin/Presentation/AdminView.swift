@@ -15,7 +15,7 @@ struct AdminView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("현재 핵의심 유저 목록")
+                Text("등록된 유저 목록")
                     .foregroundColor(.white)
                     .font(.subheadline)
                     .fontWeight(.bold)
@@ -37,6 +37,9 @@ struct AdminView: View {
                     }
                 }
                 .listStyle(.plain)
+                .refreshable {
+                    viewModel.refreshData()
+                }
             }
             
             Spacer()
@@ -45,7 +48,7 @@ struct AdminView: View {
                 Spacer()
                 
                 NavigationLink {
-                    RegisterView()
+                    RegisterView(delegate: viewModel)
                 } label: {
                     AdminButtonView(
                         placeHolder: "핵의심 유저 등록",

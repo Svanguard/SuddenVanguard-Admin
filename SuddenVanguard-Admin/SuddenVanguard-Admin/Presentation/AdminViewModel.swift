@@ -17,7 +17,8 @@ final class AdminViewModel: ObservableObject {
     
     @Published var registeredUsers: [ProgramUserData] = [
         .init(userNexonSn: "1", insertDt: "2024-09-11T07:26:32"),
-        .init(userNexonSn: "436293395", insertDt: "2024-09-11T07:26:32")
+        .init(userNexonSn: "436293395", insertDt: "2024-09-11T07:26:32"),
+        .init(userNexonSn: "5", insertDt: "2024-09-11T07:53:36")
     ]
     @Published var selectedUsers: [ProgramUserData] = []
     @Published var isLoading = false
@@ -45,6 +46,7 @@ final class AdminViewModel: ObservableObject {
                 self.isLoading = false
             } receiveValue: { [weak self] userDatas in
                 guard let self = self else { return }
+                self.selectedUsers.removeAll()
                 self.registeredUsers = userDatas
                 self.isLoading = false
 
@@ -70,8 +72,8 @@ final class AdminViewModel: ObservableObject {
             self.isLoading = false
         } receiveValue: { [weak self] userDatas in
             guard let self = self else { return }
+            self.selectedUsers.removeAll()
             self.registeredUsers = userDatas
-            self.selectedUsers = []
             self.isLoading = false
         }
         .store(in: &cancellables)

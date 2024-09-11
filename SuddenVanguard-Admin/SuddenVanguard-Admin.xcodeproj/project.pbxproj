@@ -25,6 +25,7 @@
 		4175530B2C91B7EB00549F5C /* GetAllDataEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4175530A2C91B7EB00549F5C /* GetAllDataEndPoint.swift */; };
 		4175530D2C91BBC500549F5C /* GetAllDataRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4175530C2C91BBC500549F5C /* GetAllDataRepositoryImp.swift */; };
 		417553102C92197A00549F5C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4175530F2C92197A00549F5C /* SafariView.swift */; };
+		417553122C9227E200549F5C /* AdminViewModel+RegisterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417553112C9227E200549F5C /* AdminViewModel+RegisterViewDelegate.swift */; };
 		4178BF3D2C902C680057C599 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF3C2C902C680057C599 /* AdminView.swift */; };
 		4178BF3F2C902C6E0057C599 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF3E2C902C6E0057C599 /* AdminViewModel.swift */; };
 		4178BF422C903DDF0057C599 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BF412C903DDF0057C599 /* HapticFeedbackManager.swift */; };
@@ -86,6 +87,7 @@
 		4175530A2C91B7EB00549F5C /* GetAllDataEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDataEndPoint.swift; sourceTree = "<group>"; };
 		4175530C2C91BBC500549F5C /* GetAllDataRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllDataRepositoryImp.swift; sourceTree = "<group>"; };
 		4175530F2C92197A00549F5C /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		417553112C9227E200549F5C /* AdminViewModel+RegisterViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdminViewModel+RegisterViewDelegate.swift"; sourceTree = "<group>"; };
 		4178BF3C2C902C680057C599 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
 		4178BF3E2C902C6E0057C599 /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
 		4178BF412C903DDF0057C599 /* HapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackManager.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				4178BF3E2C902C6E0057C599 /* AdminViewModel.swift */,
+				417553112C9227E200549F5C /* AdminViewModel+RegisterViewDelegate.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				4175530B2C91B7EB00549F5C /* GetAllDataEndPoint.swift in Sources */,
 				417552F12C918C4900549F5C /* DeleteRequest.swift in Sources */,
 				41807BEC2C8F6DF1002D3922 /* ProfileResponse.swift in Sources */,
+				417553122C9227E200549F5C /* AdminViewModel+RegisterViewDelegate.swift in Sources */,
 				41807BF22C8F6FB9002D3922 /* GetProfileDataRepositoryImp.swift in Sources */,
 				419398162C8E1A98005AE3D6 /* ApiError.swift in Sources */,
 				419398312C8E1FD6005AE3D6 /* UserRowView.swift in Sources */,

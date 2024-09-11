@@ -15,12 +15,14 @@ final class RegisterViewModel: ObservableObject {
     @Injected(RegisterUseCase.self)
     var useCase: RegisterUseCase
     
+    weak var delegate: RegisterViewDelegate?
+    
     @Published var searchQuery = ""
     @Published var isSearchFieldFocused = true
     @Published var isLoading = false
     @Published var userData: SearchUserData = .init(suddenNumber: 0, userName: "", userImage: "")
     @Published var checkData = false
-    @Published var selectedUser: [SearchUserData] = []
+    @Published var selectedUsers: [SearchUserData] = []
     
     private var cancellables = Set<AnyCancellable>()
     private let debounceDelay: TimeInterval = 0.5
@@ -31,23 +33,23 @@ final class RegisterViewModel: ObservableObject {
 
     func addUser(user: SearchUserData) {
         if !checkDuplicate(user: user) {
-            selectedUser.append(user)
+            selectedUsers.append(user)
             clearUserData()
         }
     }
     
     func removeUser(user: SearchUserData) {
-        selectedUser = selectedUser.filter { $0 != user }
+        selectedUsers = selectedUsers.filter { $0 != user }
     }
     
     func registerUser() {
-        guard !selectedUser.isEmpty else { return }
+        guard !selectedUsers.isEmpty else { return }
         
         useCase.registerUser(request:
                 .init(
                     adminId: auth.id,
                     adminPassword: auth.password,
-                    userNexonSn: selectedUser.map { String($0.suddenNumber) }
+                    userNexonSn: selectedUsers.map { String($0.suddenNumber) }
                 )
         )
         .receive(on: DispatchQueue.main)
@@ -58,12 +60,13 @@ final class RegisterViewModel: ObservableObject {
             case .failure(let error):
                 print("유저 등록 실패: \(error)")
             case .finished:
-                self.selectedUser.removeAll()
+                self.selectedUsers.removeAll()
                 self.userData = .init(suddenNumber: 0, userName: "", userImage: "")
                 self.checkUserData()
             }
-        } receiveValue: { response in
-            print("유저 등록 성공: \(response)")
+        } receiveValue: { userDatas in
+            print("유저 등록 성공: \(userDatas)")
+            self.delegate?.didRegisterUsers(userDatas)
         }
         .store(in: &cancellables)
     }
@@ -75,7 +78,7 @@ final class RegisterViewModel: ObservableObject {
     }
     
     private func checkDuplicate(user: SearchUserData) -> Bool {
-        selectedUser.contains(user)
+        selectedUsers.contains(user)
     }
     
     private func checkUserData() {
