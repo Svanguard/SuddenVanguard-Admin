@@ -15,18 +15,14 @@ final class AdminViewModel: ObservableObject {
     @Injected(AdminUseCase.self)
     var useCase: AdminUseCase
     
-    @Published var registeredUsers: [ProgramUserData] = [
-        .init(userNexonSn: "1", insertDt: "2024-09-11T07:26:32"),
-        .init(userNexonSn: "436293395", insertDt: "2024-09-11T07:26:32"),
-        .init(userNexonSn: "5", insertDt: "2024-09-11T07:53:36")
-    ]
-    @Published var selectedUsers: [ProgramUserData] = []
     @Published var isLoading = false
+    @Published var registeredUsers: [ProgramUserData] = []
+    @Published var selectedUsers: [ProgramUserData] = []
     
     private var cancellables = Set<AnyCancellable>()
 
     init() {
-//        getAllData()
+        getAllData()
     }
     
     func getAllData() {
