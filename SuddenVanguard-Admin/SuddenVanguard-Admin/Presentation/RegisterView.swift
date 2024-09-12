@@ -82,12 +82,14 @@ struct RegisterView: View {
             Button {
                 viewModel.registerUser()
             } label: {
-                Text("핵의심 유저 등록")
-                    .padding()
-                    .foregroundColor(.gray)
-                    .frame(width: UIScreen.main.bounds.width * 0.6)
-                    .background(Color(UIColor.loginButton).opacity(0.7))
+                AdminButtonView(
+                    placeHolder: "핵의심 유저 제거",
+                    opacityValue: viewModel.selectedUsers.isEmpty ? 0.2 : 0.7,
+                    foregroundColor: viewModel.selectedUsers.isEmpty ? Color(UIColor.gray) : Color(UIColor.white),
+                    backgroundColor: viewModel.selectedUsers.isEmpty ? Color(UIColor.search) : Color(UIColor.loginButton)
+                    )
             }
+            .disabled(viewModel.selectedUsers.isEmpty)
             .padding()
         }
         .navigationTitle("병영번호 검색")

@@ -52,7 +52,8 @@ struct AdminView: View {
                 } label: {
                     AdminButtonView(
                         placeHolder: "핵의심 유저 등록",
-                        opacityValue: 1.0
+                        opacityValue: 1.0,
+                        foregroundColor: Color(UIColor.white)
                     )
                 }
                 
@@ -63,8 +64,9 @@ struct AdminView: View {
                 } label: {
                     AdminButtonView(
                         placeHolder: "핵의심 유저 제거",
-                        opacityValue: viewModel.selectedUsers.isEmpty ? 0.2 : 1.0,
-                        backgroundColor: viewModel.selectedUsers.isEmpty ? Color(UIColor.search).opacity(0.2) : Color(UIColor.loginButton).opacity(0.7)
+                        opacityValue: viewModel.selectedUsers.isEmpty ? 0.2 : 0.7,
+                        foregroundColor: viewModel.selectedUsers.isEmpty ? Color(UIColor.gray) : Color(UIColor.white),
+                        backgroundColor: viewModel.selectedUsers.isEmpty ? Color(UIColor.search) : Color(UIColor.loginButton)
                     )
                 }
                 .disabled(viewModel.selectedUsers.isEmpty)
