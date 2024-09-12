@@ -83,7 +83,7 @@ struct RegisterView: View {
                 viewModel.registerUser()
             } label: {
                 AdminButtonView(
-                    placeHolder: "핵의심 유저 제거",
+                    placeHolder: "핵의심 유저 등록",
                     opacityValue: viewModel.selectedUsers.isEmpty ? 0.2 : 0.7,
                     foregroundColor: viewModel.selectedUsers.isEmpty ? Color(UIColor.gray) : Color(UIColor.white),
                     backgroundColor: viewModel.selectedUsers.isEmpty ? Color(UIColor.search) : Color(UIColor.loginButton)
